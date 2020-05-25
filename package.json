@@ -1,0 +1,16 @@
+{
+  "name": "praktyki",
+  "version": "1.0.0",
+  "description": "node 10.17\r npm init\r npm install http-server -g\r npm install parcel -g\r https://parceljs.org/getting_started.html",
+  "main": "index.js",
+  "scripts": {
+    "build": "parcel build index.html --out-dir public",
+    "watch": "parcel watch index.html --out-dir public"
+  },
+  "author": "Piotr Paszek",
+  "license": "ISC",
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "sass": "^1.26.5"
+  }
+}
