@@ -1,0 +1,78 @@
+@media only screen and (max-width: 600px) {
+    main{
+        min-height: 80vh;
+    }
+    .kategorie {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .kategorie_nazwa {
+        display: none;
+    }
+
+    .kategorie_nowosci,
+    .kategorie_ubrania,
+    .kategorie_buty,
+    .kategorie_akcesoria,
+    .kategorie_sport,
+    .kategorie_promocje {
+        width: calc(100vw/3);
+        height: 10vh;
+        display: flex;
+        flex-wrap: wrap;
+        text-decoration: none;
+        color: black;
+        /*nie wiem jak wysrodkowac w takim przypadku :(*/
+    }
+    #kategorie_nowosci_zdj,
+    #kategorie_ubrania_zdj,
+    #kategorie_buty_zdj,
+    #kategorie_akcesoria_zdj,
+    #kategorie_sport_zdj,
+    #kategorie_promocje_zdj{
+        width: 7vw;
+        height:7vh;
+        margin-right: 1vw;
+    }
+    #kategorie_nowosci_opis,
+    #kategorie_ubrania_opis,
+    #kategorie_buty_opis,
+    #kategorie_akcesoria_opis,
+    #kategorie_sport_opis,
+    #kategorie_promocje_opis{
+        width: 7vw;
+        height:7vh;
+        line-height: 7vh;
+    }
+    .kategorie > a:hover{
+        background-color: #000000;
+    }
+    /*chcialbym tez zrobic cos takiego ze jak na ktores z tych a 
+    nacisniemy to jego bgcolor sie zmini a hover mi nie dziala :(*/
+    .glownatresc_selekcja{
+        width: 100vw;
+        height: 10vh;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #glownatresc_selekcja_women,
+    #glownatresc_selekcja_men{
+        display: none;
+    }
+    #glownatresc_selekcja_sortowanie{
+        width: 85vw;
+        height: 10vh;
+        text-align: right;
+    }
+    #glownatresc_selekcja_sortowanie_zdj,
+    #glownatresc_selekcja_filtry_zdj{
+        width: 5vw;
+        height: 5vh;
+    }
+    #glownatresc_selekcja_filtry{
+        width: 15vw;
+        height: 10vh;
+        text-align: center;
+    }
+}
