@@ -6,83 +6,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sklep</title>
     <link rel="stylesheet" href="/src/scss/style.scss">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
     <nav>
         <div class="nav_logo">
-            <img id="nazwa_logo_zdj" src="" alt="logo sklepu">
+            <a href="index.html" id="nav_logo_link"><img id="nazwa_logo_link_zdj" src="" alt="logo sklepu"></a>
         </div>
         <div class="nav_szukaj">
-            <input type="search" id="nav_szukaj_poletekstowe">
+            <input type="search" id="nav_szukaj_poletekstowe" placeholder="Wyszukaj produkt">
+            <input type="submit" id="nav_szukaj_szukaj" value="wyszukaj">
         </div>
         <div class="nav_koszyk">
-            <img src="" alt="zdjęcie koszyka na zakupy" id="nav_koszyk_zdj">
+            <a href="" id="nav_koszyk_link">
+                <img src="src/img/koszyk.svg" alt="zdjęcie koszyka na zakupy" id="nav_koszyk_link_zdj">
+            </a>
             <p id="nav_koszyk_opis">Produkty: </p>
-            <p id="nav_koszyk_ilosc"></p>
+            <p id="nav_koszyk_ilosc">0</p>
         </div>
-        <div class="nav_konto"><img src="" alt="Twoje zdjęcie" class="konto_zdj"><strong>Witaj </strong>
-            <p class="konto_dane"></p>
+        <div class="nav_konto">
+            <p id="nav_konto_opis">Witaj,</p>
+            <p id="nav_konto_dane">kliencie</p>
         </div>
     </nav>
     <main>
         <div class="kategorie">
             <h1 class="kategorie_nazwa">Kategorie</h1>
-            <div class="kategorie_nowosci">
-                <img src="" alt="piorun" id="kategorie_nowosci_zdjecie">
-                <a href="podstrony/nowosci.html" id="kategorie_nowosci_opis">Nowości</a>
-            </div>
-            <div class="kategorie_ubrania">
-                <img src="" alt="ubranie" id="kategorie_ubrania_zdjecie">
-                <a href="podstrony/ubrania.html" id="kategorie_ubrania_opis">Ubrania</a>
-            </div>
-            <div class="kategorie_buty">
-                <img src="" alt="buty" id="kategorie_buty_zdjecie">
-                <a href="podstrony/buty.html" id="kategorie_buty_opis">Buty</a>
-            </div>
-            <div class="kategorie_akcesoria">
-                <img src="" alt="akcesoria" id="kategorie_akcesoria_zdj">
-                <a href="podstrony/akcesoria.html" id="kategorie_akcesoria_opis">Akcesoria</a>
-            </div>
-            <div class="kategorie_sport">
-                <img src="" alt="ubranie sportowe" id="kategorie_sport_zdj">
-                <a href="podstrony/sport.html" id="kategorie_sport_opis">Obuwie Sportowe</a>
-            </div>
-            <div class="kategorie_promocje">
-                <img src="" alt="logo promocji" id="kategorie_promocje_zdj">
-                <a href="podstrony/promocje.html" id="kategorie_promocje_opis">Promocje</a>
-            </div>
+            <a class="kategorie_nowosci" href="podstrony/nowosci.html">
+                <img src="src/img/nowosci.svg" alt="piorun" id="kategorie_nowosci_zdj">
+                <span id="kategorie_nowosci_opis">Nowości</span>
+            </a>
+            <a class="kategorie_ubrania" href="podstrony/ubrania.html">
+                <img src="src/img/ubranie.svg" alt="ubranie" id="kategorie_ubrania_zdj">
+                <span id="kategorie_ubrania_opis">Ubrania</span>
+            </a>
+            <a class="kategorie_buty" href="podstrony/buty.html">
+                <img src="src/img/shoe.svg" alt="buty" id="kategorie_buty_zdj">
+                <span id="kategorie_buty_opis">Buty</span>
+            </a>
+            <a class="kategorie_akcesoria" href="podstrony/akcesoria.html">
+                <img src="src/img/akcesoria.svg" alt="kapelusz" id="kategorie_akcesoria_zdj">
+                <span id="kategorie_akcesoria_opis">Akcesoria</span>
+            </a>
+            <a class="kategorie_sport" href="podstrony/sport.html">
+                <img src="src/img/sport.svg" alt="ubranie sportowe" id="kategorie_sport_zdj">
+                <span id="kategorie_sport_opis">Sport</span>
+            </a>
+            <a class="kategorie_promocje" href="podstrony/promocje.html">
+                <img src="src/img/sale.svg" alt="logo promocji" id="kategorie_promocje_zdj">
+                <span id="kategorie_promocje_opis">Promocje</span>
+            </a>
         </div>
         <div class="glownatresc">
             <div class="glownatresc_selekcja">
-                <div id="glownatresc_selekcja_kategoria"></div>
-                <div id="glownatresc_selekcja_selektory">
-                    <div id="glownatresc_selekcja_selektory_women">
-                        <img src="" alt="kobieta" id="glownatresc_selekcja_selektory_women_zdj">
-                        <p id="glownatresc_selekcja_selektory_women_opis"></p>
-                    </div>
-                    <div id="glownatresc_selekcja_selektory_men">
-                        <img src="" alt="kobieta" id="glownatresc_selekcja_selektory_men_zdj">
-                        <p id="glownatresc_selekcja_selektory_men_opis"></p>
-                    </div>
-                    <div id="glownatresc_selekcja_selektory_sortowanie">
-                        <img src="" alt="selektor" id="glownatresc_selekcja_selektory_sortowanie_zdj">
-                        <p id="glownatresc_selekcja_selektory_sortowanie_opis"></p>
-                    </div>
-                    <div id="glownatresc_selekcja_selektory_filtry">
-                        <img src="" alt="filtry" id="glownatresc_selekcja_selektory_filtry_zdj">
-                        <p id="glownatresc_selekcja_selektory_filtry_opis"></p>
+                <div id="glownatresc_selekcja_women">
+                    <img src="src/img/woman.svg" alt="kobieta" id="glownatresc_selekcja_women_zdj">
+                </div>
+                <div id="glownatresc_selekcja_men">
+                    <img src="src/img/man.svg" alt="kobieta" id="glownatresc_selekcja_men_zdj">
+                </div>
+                <div id="glownatresc_selekcja_sortowanie">
+                    <img src="src/img/sort.svg" alt="selektor" id="glownatresc_selekcja_sortowanie_zdj">
+                    <div id="glownatresc_selekcja_sortowanie_opis">
+                        <!--tutaj chcę zrobić sortowanie wg ceny dol gora itp. ale na razie nie mam
+                    pojecia jak-->
+                    </div>  
+                </div>
+                <div id="glownatresc_selekcja_filtry">
+                    <img src="src/img/filter.svg" alt="filtry" id="glownatresc_selekcja_filtry_zdj">
+                    <div id="glownatresc_selekcja_filtry_opis">
+                        <!--a tutaj chcę zrobić żeby moża bylo wybrac kategorie z tych co są u
+                        gory ubrania promocje itp. Też na razie nie mam pojęcia jak-->
                     </div>
                 </div>
             </div>
             <div class="glownatresc_tresc">
-                <div class="glownatresc_tresc_produkt"></div>
-                <div class="glownatresc_tresc_produkt"></div>
-                <div class="glownatresc_tresc_produkt"></div>
-                <div class="glownatresc_tresc_produkt"></div>
-                <div class="glownatresc_tresc_produkt"></div>
-                <div class="glownatresc_tresc_produkt"></div>
-                <div class="glownatresc_tresc_produkt"></div>
+                <div class="glownatresc_tresc_produkt">afe</div>
+                <div class="glownatresc_tresc_produkt">esfes</div>
+                <div class="glownatresc_tresc_produkt">esf</div>
+                <div class="glownatresc_tresc_produkt">efsef</div>
+                <div class="glownatresc_tresc_produkt">sefes</div>
+                <div class="glownatresc_tresc_produkt">sefesf</div>
+                <div class="glownatresc_tresc_produkt">esfsefe</div>
+                <div class="glownatresc_tresc_produkt">afe</div>
+                <div class="glownatresc_tresc_produkt">esfes</div>
+                <div class="glownatresc_tresc_produkt">esf</div>
+                <div class="glownatresc_tresc_produkt">efsef</div>
+                <div class="glownatresc_tresc_produkt">sefes</div>
+                <div class="glownatresc_tresc_produkt">sefesf</div>
+                <div class="glownatresc_tresc_produkt">esfsefe</div>
+                <div class="glownatresc_tresc_produkt">afe</div>
+                <div class="glownatresc_tresc_produkt">esfes</div>
+                <div class="glownatresc_tresc_produkt">esf</div>
+                <div class="glownatresc_tresc_produkt">efsef</div>
+                <div class="glownatresc_tresc_produkt">sefes</div>
+                <div class="glownatresc_tresc_produkt">sefesf</div>
+                <div class="glownatresc_tresc_produkt">esfsefe</div>
+                <div class="glownatresc_tresc_produkt">afe</div>
+                <div class="glownatresc_tresc_produkt">esfes</div>
+                <div class="glownatresc_tresc_produkt">esf</div>
+                <div class="glownatresc_tresc_produkt">efsef</div>
+                <div class="glownatresc_tresc_produkt">sefes</div>
+                <div class="glownatresc_tresc_produkt">sefesf</div>
+                <div class="glownatresc_tresc_produkt">esfsefe</div>
             </div>
         </div>
     </main>
