@@ -1,7 +1,11 @@
-@import './generic';
-@import './_mobile_header';
-@import './_mobile_main';
-@import './_mobile_footer';
+@import './clear';
+@import './header';
+@import './main';
+@import './footer';
 body{
     font-family: 'Lato', sans-serif;
+    background-color: #a1d6e2;
+}
+html{
+    max-width: 100%;
 }

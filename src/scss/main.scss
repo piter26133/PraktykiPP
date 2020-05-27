@@ -1,4 +1,5 @@
 main {
+    margin-top: 4.5vh;
     min-height: 80vh;
 }
 
@@ -6,7 +7,6 @@ main {
     display: flex;
     flex-wrap: wrap;
 }
-
 .nav_name {
     display: none;
 }
@@ -18,9 +18,9 @@ main {
     flex-wrap: wrap;
     text-decoration: none;
     color: black;
-    /*nie wiem jak wysrodkowac w takim przypadku :(*/
+    justify-content: center;
+    align-items: center;
 }
-
 #nav_categorries_img {
     width: 7vw;
     height: 7vh;
@@ -32,16 +32,16 @@ main {
     height: 7vh;
     line-height: 7vh;
 }
-
-nav>a:hover {
-    background-color: #000000;
+nav>a{
+    transition: background-color 0.3s;
 }
-
-/*chcialbym tez zrobic cos takiego ze jak na ktores z tych a 
-    nacisniemy to jego bgcolor sie zmini a hover mi nie dziala :(*/
+nav>a:hover {
+    background-color: #1995ad;
+}
 .sort {
-    width: 100vw;
+    width: 99vw;
     height: 10vh;
+    margin-top: 2vh;
     display: flex;
     flex-wrap: wrap;
 }
@@ -56,13 +56,13 @@ nav>a:hover {
     height: 10vh;
     text-align: right;
 }
-#sort_filters {
-    width: 15vw;
+#sort_filter {
+    width: 14vw;
     height: 10vh;
     text-align: center;
 }
 #sort_sort_img,
-#sort_filters_img {
+#sort_filter_img {
     width: 5vw;
     height: 5vh;
 }
