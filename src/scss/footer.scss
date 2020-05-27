@@ -15,13 +15,14 @@ footer {
 }
 
 .footer_socialmedia {
-    width: 15vw;
+    width: 30vw;
     margin-top: 0.5vh;
     height: 4.5vh;
-    margin-left: 5vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: right;
+    box-sizing: border-box;
+    padding-right: 2vw;
 }
 
 .footer_socialmedia_img {
