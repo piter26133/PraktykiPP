@@ -1,3 +1,11 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
+html {
+  max-width: 100vw;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -49,14 +57,15 @@ table {
 header {
   display: flex;
   flex-wrap: wrap;
-  height: 10vh;
+  height: 15vh;
   padding: 1vh;
   box-sizing: border-box;
+  background-color: #a1d6e2;
 }
 
 .header_logo {
   order: 1;
-  width: 35vw;
+  width: 30vw;
   height: 5vh;
 }
 
@@ -82,7 +91,7 @@ header {
   margin-left: 2vw;
 }
 
-#header_basket_link_img {
+.header_basket_link_img {
   height: 3.5vh;
   width: 3, 5vw;
 }
@@ -95,39 +104,59 @@ header {
   justify-content: center;
 }
 
-#header_search_textarea {
+.header_search_textarea {
   width: 75vw;
   height: 5vh;
 }
 
-#header_search_search {
+.header_search_search {
   width: 20vw;
   height: 5vh;
 }
 
-#header_search_search,
-#header_search_textarea {
+.header_search_search,
+.header_search_textarea {
   background-color: #f1f1f1;
   border: 1px solid #BCBABE;
 }
 
 main {
   margin-top: 4.5vh;
-  min-height: 80vh;
+  min-height: 84.5vh;
 }
 
 .mainmenu {
-  display: flex;
-  flex-wrap: wrap;
+  height: 20vh;
+  grid-template-rows: 10vh;
+  display: grid;
+  grid-template-areas: "a b c" "d e f";
 }
 
-.nav_name {
-  display: none;
+.gridarea1 {
+  grid-area: a;
+}
+
+.gridarea2 {
+  grid-area: b;
+}
+
+.gridarea3 {
+  grid-area: c;
+}
+
+.gridarea4 {
+  grid-area: d;
+}
+
+.gridarea5 {
+  grid-area: e;
+}
+
+.gridarea6 {
+  grid-area: f;
 }
 
 .nav_categorries {
-  width: calc(100vw/3);
-  height: 10vh;
   display: flex;
   flex-wrap: wrap;
   text-decoration: none;
@@ -136,13 +165,13 @@ main {
   align-items: center;
 }
 
-#nav_categorries_img {
+.nav_categorries_img {
   width: 7vw;
   height: 7vh;
   margin-right: 1vw;
 }
 
-#nav_categorries_description {
+.nav_categorries_description {
   width: 7vw;
   height: 7vh;
   line-height: 7vh;
@@ -164,68 +193,135 @@ nav > a:hover {
   flex-wrap: wrap;
 }
 
-#sort_women,
-#sort_men {
+.sort_women,
+.sort_men {
   display: none;
 }
 
-#sort_sort {
+.sort_sort {
   width: 85vw;
   height: 10vh;
   text-align: right;
 }
 
-#sort_filter {
+.sort_filter {
   width: 14vw;
   height: 10vh;
   text-align: center;
 }
 
-#sort_sort_img,
-#sort_filter_img {
-  width: 5vw;
-  height: 5vh;
+.sort_sort_img,
+.sort_filter_img {
+  width: 3vw;
+  height: 43h;
 }
 
 footer {
-  width: 100%;
+  -ms-scroll-snap-x: 100vw;
   height: 5vh;
-  line-height: 5vh;
-  display: flex;
-  flex-wrap: wrap;
+  line-height: 4.5vh;
+  display: grid;
+  grid-template-columns: auto auto auto;
   background-color: #BCBABE;
 }
 
-.footer_contactus,
+.footer_contactus {
+  text-align: center;
+}
+
+.footer_contactus > a {
+  color: black;
+  text-decoration: none;
+}
+
+footer > div > a:hover {
+  color: blue;
+  transition: color 0.5s;
+}
+
 .footer_copy {
-  width: 35vw;
-  height: 5vh;
   text-align: center;
 }
 
 .footer_socialmedia {
-  width: 30vw;
-  margin-top: 0.5vh;
-  height: 4.5vh;
+  padding-top: 0.5vh;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: right;
+  text-align: center;
   box-sizing: border-box;
-  padding-right: 2vw;
 }
 
 .footer_socialmedia_img {
-  height: 3vh;
-  width: 4vw;
+  height: 4vh;
+  width: 5vw;
 }
 
-body {
-  font-family: "Lato", sans-serif;
-  background-color: #a1d6e2;
+/*zastanawia mnie jedynie dlaczego pod footerem jest jeszcze 
+pusta przestrzen pokazuje ze to obiekt html a on ma marginy 0 */
+@media only screen and (min-width: 768px) {
+  body,
+input {
+    font-size: 1.4rem;
+  }
 }
+@media only screen and (min-width: 1024px) {
+  body,
+input {
+    font-size: 1.5rem;
+  }
 
-html {
-  max-width: 100%;
+  header {
+    height: 4.5vh;
+  }
+
+  .header_logo {
+    order: 1;
+    width: 10vw;
+  }
+
+  .header_search {
+    order: 2;
+    width: 50vw;
+  }
+
+  input {
+    line-height: 3.5vh;
+  }
+
+  .header_basket {
+    order: 3;
+    width: 30vw;
+    margin-left: 5vw;
+  }
+
+  footer {
+    width: 100vw;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  body,
+input {
+    font-size: 1.6rem;
+  }
+
+  header {
+    height: 8vh;
+  }
+
+  .header_logo {
+    order: 1;
+    width: 10vw;
+  }
+
+  .header_search {
+    order: 2;
+    width: 50vw;
+  }
+
+  .header_basket {
+    order: 3;
+    width: 30vw;
+    margin-left: 5vw;
+  }
 }
 
 /*# sourceMappingURL=/style.082fdd9f.css.map */

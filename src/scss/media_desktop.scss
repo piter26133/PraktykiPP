@@ -1,0 +1,27 @@
+@media only screen and (min-width: 1440px) {
+
+    body,
+    input {
+        font-size: 1.6rem;
+    }
+
+    header {
+        height: 8vh;
+    }
+
+    .header_logo {
+        order: 1;
+        width: 10vw;
+    }
+
+    .header_search {
+        order: 2;
+        width: 50vw;
+    }
+
+    .header_basket {
+        order: 3;
+        width: 30vw;
+        margin-left: 5vw;
+    }
+}

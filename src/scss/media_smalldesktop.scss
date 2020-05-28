@@ -1,0 +1,35 @@
+@media only screen and (min-width: 1024px) {
+
+    body,
+    input {
+        font-size: 1.5rem;
+    }
+
+    header {
+        height: 4.5vh;
+    }
+
+    .header_logo {
+        order: 1;
+        width: 10vw;
+    }
+
+    .header_search {
+        order: 2;
+        width: 50vw;
+    }
+
+    input {
+        line-height: 3.5vh;
+    }
+
+    .header_basket {
+        order: 3;
+        width: 30vw;
+        margin-left: 5vw;
+    }
+
+    footer {
+        width: 100vw;
+    }
+}

@@ -1,11 +1,11 @@
+@import './settings.scss';
+
 @import './clear';
+
 @import './header';
 @import './main';
 @import './footer';
-body{
-    font-family: 'Lato', sans-serif;
-    background-color: #a1d6e2;
-}
-html{
-    max-width: 100%;
-}
+
+@import './media_tablet.scss';
+@import './media_smalldesktop.scss';
+@import './media_desktop.scss';
