@@ -70,7 +70,8 @@ header {
 }
 
 .header_logo_link > img {
-  margin-left: 10px;
+  height: 6vh;
+  width: 20vw;
 }
 
 .header_basket {
@@ -121,8 +122,7 @@ header {
 }
 
 main {
-  margin-top: 4.5vh;
-  min-height: 84.5vh;
+  min-height: 86vh;
 }
 
 .mainmenu {
@@ -246,13 +246,12 @@ footer > div > a:hover {
 .footer_socialmedia {
   padding-top: 0.5vh;
   display: flex;
-  text-align: center;
+  align-items: right;
   box-sizing: border-box;
 }
 
 .footer_socialmedia_img {
   height: 4vh;
-  width: 5vw;
 }
 
 /*zastanawia mnie jedynie dlaczego pod footerem jest jeszcze 
@@ -270,12 +269,17 @@ input {
   }
 
   header {
-    height: 4.5vh;
+    height: 7vh;
   }
 
   .header_logo {
     order: 1;
     width: 10vw;
+  }
+
+  .header_logo_link > img {
+    height: 5vh;
+    width: 8vw;
   }
 
   .header_search {

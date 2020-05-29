@@ -6,14 +6,17 @@
     }
 
     header {
-        height: 4.5vh;
+        height: 7vh;
     }
 
     .header_logo {
         order: 1;
         width: 10vw;
     }
-
+    .header_logo_link>img {
+        height: 5vh;
+        width: 8vw;
+      }
     .header_search {
         order: 2;
         width: 50vw;

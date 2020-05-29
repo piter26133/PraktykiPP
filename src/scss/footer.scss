@@ -24,13 +24,13 @@ footer > div > a:hover{
 .footer_socialmedia {
     padding-top: 0.5vh;
     display: flex;
-    text-align: center;
+    align-items: right;
     box-sizing: border-box;
 }
 
 .footer_socialmedia_img {
     height: 4vh;
-    width: 5vw;
 }
 /*zastanawia mnie jedynie dlaczego pod footerem jest jeszcze 
 pusta przestrzen pokazuje ze to obiekt html a on ma marginy 0 */
+// a druga rzecz to nie wiem ja te sociale na lewo przessunac zadna z komend nie dziala ..
