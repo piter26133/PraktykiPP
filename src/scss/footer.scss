@@ -1,6 +1,4 @@
 footer {
-    -ms-scroll-snap-x: 100vw;
-    height: 5vh;
     line-height: 4.5vh;
     display: grid;
     grid-template-columns: auto auto auto;
@@ -33,4 +31,4 @@ footer > div > a:hover{
 }
 /*zastanawia mnie jedynie dlaczego pod footerem jest jeszcze 
 pusta przestrzen pokazuje ze to obiekt html a on ma marginy 0 */
-// a druga rzecz to nie wiem ja te sociale na lewo przessunac zadna z komend nie dziala ..
+// a druga rzecz to nie wiem ja te sociale na prawo przessunac zadna z komend nie dziala ..
