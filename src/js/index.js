@@ -1,15 +1,45 @@
 var articleArray = [
     {
-      "title": "Article 1",
-      "short": "Short description 1. It will be displayed below"
+      "img": "/src/product_img/koszula.jpg",
+      "alt": "Koszula",
+      "name": "Koszula męska",
+      "price": "100 PLN"
     },
     {
-      "title": "Article 2",
-      "short": "Another description for article"
+      "img": "/src/product_img/koszula.jpg",
+      "alt": "koszula",
+      "name": "Article 1",
+      "price": "Pisont groszy",
     },
     {
-      "title": "Article 3",
-      "short": "Another description for article3"
+      "img": "/src/product_img/koszula.jpg",
+      "alt": "koszula",
+      "name": "Article 1",
+      "price": "Pisont groszy",
+    },
+    {
+      "img": "/src/product_img/koszula.jpg",
+      "alt": "koszula",
+      "name": "Article 1",
+      "price": "Pisont groszy",
+    },
+    {
+      "img": "/src/product_img/koszula.jpg",
+      "alt": "koszula",
+      "name": "Article 1",
+      "price": "Pisont groszy",
+    },
+    {
+      "img": "/src/product_img/koszula.jpg",
+      "alt": "koszula",
+      "name": "Article 1",
+      "price": "Pisont groszy",
+    },
+    {
+      "img": "/src/product_img/koszula.jpg",
+      "alt": "koszula",
+      "name": "Article 1",
+      "price": "Pisont groszy",
     }
   ];
   
@@ -20,8 +50,10 @@ var articleArray = [
   
   function processArticle(art) {
     var temp = templateHtml
-      .replace(/{{title}}/g, art.title)
-      .replace(/{{short}}/g, art.short);
+      .replace(/{{src}}/g, art.img)
+      .replace(/{{alt}}/g, art.alt)
+      .replace(/{{name}}/g, art.name)
+      .replace(/{{price}}/g, art.price)
     listing.insertAdjacentHTML('beforeend', temp);
   }
   

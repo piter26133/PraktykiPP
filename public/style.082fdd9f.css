@@ -216,6 +216,28 @@ nav > a:hover {
   height: 43h;
 }
 
+.c-article-listing {
+  display: flex;
+  max-width: 100%;
+  margin-left: 2vw;
+  text-align: center;
+}
+
+.productname {
+  font-weight: bold;
+  margin-bottom: 1vh;
+}
+
+.number_and_size,
+.productprice {
+  font-size: 0.8rem;
+}
+
+form > div {
+  width: 100%;
+  margin-top: 1vh;
+}
+
 footer {
   line-height: 4.5vh;
   display: grid;
@@ -259,6 +281,10 @@ pusta przestrzen pokazuje ze to obiekt html a on ma marginy 0 */
 input {
     font-size: 1.4rem;
   }
+
+  .productprice {
+    font-size: 1rem;
+  }
 }
 @media only screen and (min-width: 1024px) {
   body,
@@ -298,6 +324,10 @@ input {
   main {
     min-height: 87vh;
   }
+
+  .productprice {
+    font-size: 1.2rem;
+  }
 }
 @media only screen and (min-width: 1440px) {
   body,
@@ -327,6 +357,10 @@ input {
 
   main {
     min-height: 86vh;
+  }
+
+  .productprice {
+    font-size: 1.4rem;
   }
 }
 

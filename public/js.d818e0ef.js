@@ -119,14 +119,40 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   return newRequire;
 })({"src/js/index.js":[function(require,module,exports) {
 var articleArray = [{
-  "title": "Article 1",
-  "short": "Short description 1. It will be displayed below"
+  "img": "/src/product_img/koszula.jpg",
+  "alt": "Koszula",
+  "name": "Koszula męska",
+  "price": "100 PLN"
 }, {
-  "title": "Article 2",
-  "short": "Another description for article"
+  "img": "/src/product_img/koszula.jpg",
+  "alt": "koszula",
+  "name": "Article 1",
+  "price": "Pisont groszy"
 }, {
-  "title": "Article 3",
-  "short": "Another description for article3"
+  "img": "/src/product_img/koszula.jpg",
+  "alt": "koszula",
+  "name": "Article 1",
+  "price": "Pisont groszy"
+}, {
+  "img": "/src/product_img/koszula.jpg",
+  "alt": "koszula",
+  "name": "Article 1",
+  "price": "Pisont groszy"
+}, {
+  "img": "/src/product_img/koszula.jpg",
+  "alt": "koszula",
+  "name": "Article 1",
+  "price": "Pisont groszy"
+}, {
+  "img": "/src/product_img/koszula.jpg",
+  "alt": "koszula",
+  "name": "Article 1",
+  "price": "Pisont groszy"
+}, {
+  "img": "/src/product_img/koszula.jpg",
+  "alt": "koszula",
+  "name": "Article 1",
+  "price": "Pisont groszy"
 }];
 var listing = document.querySelector('.c-article-listing');
 var template = document.getElementById("article-template");
@@ -134,7 +160,7 @@ var templateHtml = template.innerHTML;
 var listHtml = "";
 
 function processArticle(art) {
-  var temp = templateHtml.replace(/{{title}}/g, art.title).replace(/{{short}}/g, art.short);
+  var temp = templateHtml.replace(/{{src}}/g, art.img).replace(/{{alt}}/g, art.alt).replace(/{{name}}/g, art.name).replace(/{{price}}/g, art.price);
   listing.insertAdjacentHTML('beforeend', temp);
 }
 
@@ -167,7 +193,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56115" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57460" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

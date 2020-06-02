@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +12,7 @@
         <link rel="icon" href="/favicon.a63656fa.ico">
     </head>
 </head>
+
 <body>
     <header>
         <div class="header_logo">
@@ -52,13 +55,15 @@
                         gory ubrania promocje itp. Też na razie nie mam pojęcia jak-->
                     </div>
                 </div>
+                
                 <section class="c-article-listing">
                 </section>
-                
                 <script id="article-template" type="text/template">
-                  <article>
-                    <h2>{{title}}</h2>
-                    <p>{{short}}</p>
+                    <article>
+                    <img src="{{src}}" alt="{{alt}}"/>
+                    <h2>{{name}}</h2>
+                    <span>{{price}}</span>
+                    <input type="button" value="dodaj do koszyka">
                   </article>
                 </script>
         </nav></section>
@@ -86,4 +91,5 @@
     </footer>
     <script src="/js.d818e0ef.js"></script>
 </body>
+
 </html>
