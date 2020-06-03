@@ -118,53 +118,36 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"src/js/index.js":[function(require,module,exports) {
-var articleArray = [{
-  "img": "/src/product_img/koszula.jpg",
-  "alt": "Koszula",
-  "name": "Koszula męska",
-  "price": "100 PLN"
-}, {
-  "img": "/src/product_img/koszula.jpg",
-  "alt": "koszula",
-  "name": "Article 1",
-  "price": "Pisont groszy"
-}, {
-  "img": "/src/product_img/koszula.jpg",
-  "alt": "koszula",
-  "name": "Article 1",
-  "price": "Pisont groszy"
-}, {
-  "img": "/src/product_img/koszula.jpg",
-  "alt": "koszula",
-  "name": "Article 1",
-  "price": "Pisont groszy"
-}, {
-  "img": "/src/product_img/koszula.jpg",
-  "alt": "koszula",
-  "name": "Article 1",
-  "price": "Pisont groszy"
-}, {
-  "img": "/src/product_img/koszula.jpg",
-  "alt": "koszula",
-  "name": "Article 1",
-  "price": "Pisont groszy"
-}, {
-  "img": "/src/product_img/koszula.jpg",
-  "alt": "koszula",
-  "name": "Article 1",
-  "price": "Pisont groszy"
-}];
 var listing = document.querySelector('.c-article-listing');
 var template = document.getElementById("article-template");
 var templateHtml = template.innerHTML;
 var listHtml = "";
 
 function processArticle(art) {
-  var temp = templateHtml.replace(/{{src}}/g, art.img).replace(/{{alt}}/g, art.alt).replace(/{{name}}/g, art.name).replace(/{{price}}/g, art.price);
+  var temp = templateHtml.replace(/{{src}}/g, art.src).replace(/{{alt}}/g, art.alt).replace(/{{name}}/g, art.name).replace(/{{price}}/g, art.price).replace(/{{sizes}}/g, art.sizes);
   listing.insertAdjacentHTML('beforeend', temp);
 }
 
-articleArray.map(processArticle);
+function loadJSON(url, callback) {
+  var xobj = new XMLHttpRequest();
+  xobj.overrideMimeType("/products.json");
+  xobj.open('GET', url, true);
+
+  xobj.onreadystatechange = function () {
+    if (xobj.readyState == 4 && xobj.status == "200") {
+      callback(xobj.responseText);
+    }
+  };
+
+  xobj.send(null);
+}
+
+loadJSON('http://www.mocky.io/v2/5ed77d39320000cc5c27485f', function (data) {
+  var productsObject = JSON.parse(data);
+  productsObject.products.filter(function (item) {
+    return item.category.indexOf("NEW") >= 0;
+  }).map(processArticle);
+});
 },{}],"../../AppData/Roaming/npm/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -193,7 +176,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57460" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62546" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
