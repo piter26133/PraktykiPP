@@ -1,0 +1,98 @@
+@import '/src/scss/settings.scss';
+
+@import '/src/scss/clear.scss';
+@import '/src/scss/newstyle_tablet.scss';
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    height: 5vh;
+}
+
+.header_menu,
+.header_account,
+.header_search,
+.header_basket,
+.main_posts_filters_woman,
+.main_posts_filters_man,
+.main_posts_filters_filter,
+.main_posts_filters_sort {
+    width: 10vw;
+    height: 5vh;
+}
+
+.header_menu>img,
+.header_account>img,
+.header_search>img,
+.header_basket>img{
+    width: 7vw;
+    margin: 1.5vw;
+}
+
+.header_logo {
+    width: 60vw;
+    height: 5vh;
+    display: flex;
+}
+
+.header_logo>a>img {
+    width: 20vw;
+    height: 5vh;
+    margin: 1.5vw;
+}
+main{
+    width: 100vw;
+    height: 88vh;
+}
+.main_page{
+    height: 10vh;
+    width: 100vw;
+}
+.main_page>h1{
+    width: 100%;
+    text-align: center;
+    line-height: 10vh;
+    font-size: 1.8rem;
+    font-family: 'Lato', sans-serif;
+}
+.main_posts{  
+    width: 100vw;
+}
+.main_posts_filters{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.main_posts_filters_filter>img,
+.main_posts_filters_woman>img,
+.main_posts_filters_man>img,
+.main_posts_filters_sort>img{
+    width: 6vw;
+    margin: 2vw;
+}
+footer{
+    display: flex;
+    width: 100vw;
+    height: 5vh;
+}
+.footer_contact{
+    width: 70vw;
+    height: 5vh;
+    text-align: center;   
+}
+.footer_contact>a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Lato', sans-serif;
+    line-height: 5vh;
+    font-size: 1.5rem;
+}
+.footer_socialmedia{
+    display: flex;
+    width: 30vw;
+    height: 5vh;
+}
+.footer_socialmedia>div>a>img{
+    width: 9vw;
+    height: 5vh;
+    margin: 0.5vw;
+}
