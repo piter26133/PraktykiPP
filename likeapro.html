@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Center os Resell</title>
+    <link rel="stylesheet" href="/src/scss_pro/style.scss">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link rel="icon" href="src/img/favicon.ico">
+</head>
+<body>
+    <header class="header">
+        <nav class="header__menu">
+            <img src="/src/img/open-menu.svg">
+        </nav>
+        <div class="header__logo">
+            <a href="new.html" class="header__logo-link">
+                <img class="header__logo-img" src="src/img/logo2.svg" alt="logo sklepu">
+            </a>
+        </div>
+        <div class="header__account">
+            <img src="/src/img/account.svg">
+        </div>
+        <div class="header__search">
+            <img src="/src/img/search.svg">
+        </div>
+        <div class="header__basket">
+            <img src="/src/img/koszyk.svg">
+        </div>
+    </header>
+    <main class="main">
+        <div class="main__page">
+            <h1 class="main__page__name">Strona głowna</h1>
+        </div>
+        <section class="posts">
+            <div class="posts__filters">
+                <div class="posts__sort">
+                    <img src="/src/img/sort.svg">
+                </div>
+                <div class="posts__filter">
+                    <img src="/src/img/woman.svg">
+                </div>
+                <div class="posts__filter">
+                    <img src="/src/img/man.svg">
+                </div>
+                <div class="posts__filter">
+                    <img src="/src/img/filter.svg">
+                </div>
+            </div>
+            <section class="posts__listing">
+            </section>
+            
+            <script id="post-template" type="text/template">
+              <article>
+                <h2>{{title}}</h2>
+                <p>{{short}}</p>
+              </article>
+            </script>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="contact">
+            <a href="" class="contact__link">Contact Us</a>
+        </div>
+        <div class="social">
+            <div class="social-item">
+                <a href="https://twitter.com" target="__blank" class="social-item__link">
+                    <img src="src/img/twitter.svg" alt="twitter logo" class="social-item__img">
+                </a>
+            </div>
+            <div class="social-item">
+                <a href="https://www.instagram.com" target="__blank" class="social-item__link">
+                    <img src="src/img/instagram.svg" alt="instagram logo" class="social-item__img">
+                </a>
+            </div>
+            <div class="social-item">
+                <a href="https://www.facebook.com/" target="__blank" class="social-item__link">
+                    <img src="src/img/facebookd.svg" alt="facebook logo" class="social-item__img">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="/src/js/indexpro.js" async></script>
+</body>
+</html>

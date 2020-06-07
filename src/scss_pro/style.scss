@@ -1,0 +1,19 @@
+// Settings 
+@import './settings/colors';
+@import './settings/sizes';
+@import './settings/mediaquery';
+
+// Generic styles
+@import './generic/layout';
+@import './generic/clear';
+
+// Elements 
+@import './elements/typography';
+@import './elements/img';
+
+// Components
+@import './components/header';
+@import './components/footer';
+@import './components/main';
+@import './components/posts';
+@import './components/social';

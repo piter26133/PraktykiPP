@@ -1,0 +1,38 @@
+.posts {
+    display: flex;
+    flex-direction: column;
+    
+    &__filters {
+        display: flex;
+        justify-content: flex-end;
+        margin-left: -$space-sm;
+        margin-right: -$space-sm;
+        margin-bottom: $space-lg;
+    }
+
+    &__sort,
+    &__filter {
+        display: flex;
+        justify-content: center;
+        padding: $space-sm;
+        margin: $space-sm;
+        height: 45px;
+        min-width: 60px;
+        border: 1px solid $border-color;
+        border-radius: 5px;
+
+        img {
+            max-width: 40px;
+        }
+    }
+
+    &__listing {
+    }
+}
+
+@include bp_sm {
+}
+@include bp_md {
+}
+@include bp_lg {
+}

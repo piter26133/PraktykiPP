@@ -1,9 +1,9 @@
-body {
-  font-family: "Lato", sans-serif;
-}
-
 html {
   max-width: 100vw;
+}
+
+body {
+  font-family: "Lato", sans-serif;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -52,6 +52,16 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+html {
+  font-family: "Lato", sans-serif;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
 }
 
 header {
@@ -121,123 +131,6 @@ header {
   border: 1px solid #BCBABE;
 }
 
-main {
-  min-height: auto;
-}
-
-.mainmenu {
-  height: 20vh;
-  grid-template-rows: 10vh;
-  display: grid;
-  grid-template-areas: "a b c" "d e f";
-}
-
-.gridarea1 {
-  grid-area: a;
-}
-
-.gridarea2 {
-  grid-area: b;
-}
-
-.gridarea3 {
-  grid-area: c;
-}
-
-.gridarea4 {
-  grid-area: d;
-}
-
-.gridarea5 {
-  grid-area: e;
-}
-
-.gridarea6 {
-  grid-area: f;
-}
-
-.nav_categorries {
-  display: flex;
-  flex-wrap: wrap;
-  text-decoration: none;
-  color: black;
-  justify-content: center;
-  align-items: center;
-}
-
-.nav_categorries_img {
-  width: 7vw;
-  height: 7vh;
-  margin-right: 1vw;
-}
-
-.nav_categorries_description {
-  width: 7vw;
-  height: 7vh;
-  line-height: 7vh;
-}
-
-nav > a {
-  transition: background-color 0.3s;
-}
-
-nav > a:hover {
-  background-color: #1995ad;
-}
-
-.sort {
-  width: 99vw;
-  height: 10vh;
-  margin-top: 2vh;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.sort_women,
-.sort_men {
-  display: none;
-}
-
-.sort_sort {
-  width: 85vw;
-  height: 10vh;
-  text-align: right;
-}
-
-.sort_filter {
-  width: 14vw;
-  height: 10vh;
-  text-align: center;
-}
-
-.sort_sort_img,
-.sort_filter_img {
-  width: 3vw;
-  height: 43h;
-}
-
-.c-article-listing {
-  display: flex;
-  max-width: 100%;
-  margin-left: 2vw;
-  text-align: center;
-}
-
-.productname {
-  font-weight: bold;
-  margin-bottom: 1vh;
-}
-
-.number_and_size,
-.productprice {
-  font-size: 0.8rem;
-}
-
-form > div {
-  width: 100%;
-  margin-top: 1vh;
-}
-
 footer {
   line-height: 4.5vh;
   display: grid;
@@ -276,92 +169,5 @@ footer > div > a:hover {
 
 /*zastanawia mnie jedynie dlaczego pod footerem jest jeszcze 
 pusta przestrzen pokazuje ze to obiekt html a on ma marginy 0 */
-@media only screen and (min-width: 768px) {
-  body,
-input {
-    font-size: 1.4rem;
-  }
-
-  .productprice {
-    font-size: 1rem;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  body,
-input {
-    font-size: 1.5rem;
-  }
-
-  header {
-    height: 7vh;
-  }
-
-  .header_logo {
-    order: 1;
-    width: 10vw;
-  }
-
-  .header_logo_link > img {
-    height: 5vh;
-    width: 8vw;
-  }
-
-  .header_search {
-    order: 2;
-    width: 50vw;
-  }
-
-  input {
-    line-height: 3.5vh;
-  }
-
-  .header_basket {
-    order: 3;
-    width: 30vw;
-    margin-left: 5vw;
-  }
-
-  main {
-    min-height: 87vh;
-  }
-
-  .productprice {
-    font-size: 1.2rem;
-  }
-}
-@media only screen and (min-width: 1440px) {
-  body,
-input {
-    font-size: 1.6rem;
-  }
-
-  header {
-    height: 8vh;
-  }
-
-  .header_logo {
-    order: 1;
-    width: 10vw;
-  }
-
-  .header_search {
-    order: 2;
-    width: 50vw;
-  }
-
-  .header_basket {
-    order: 3;
-    width: 30vw;
-    margin-left: 5vw;
-  }
-
-  main {
-    min-height: 86vh;
-  }
-
-  .productprice {
-    font-size: 1.4rem;
-  }
-}
 
 /*# sourceMappingURL=/style.082fdd9f.css.map */
