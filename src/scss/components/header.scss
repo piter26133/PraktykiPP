@@ -1,0 +1,76 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  padding: $space-md;
+  background: $main-bg;
+  
+  &__hamburger {
+    height: 40px;
+    width: 40px;
+    margin-left: $space-md;
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: flex-start;
+    height: 40px;
+    width: auto;
+    margin-right: $logo_space-lg;
+  }
+
+  &__logo-link {
+    display: flex;
+    height: 40px;
+    width: 220px;
+  }
+  &__menu{
+    display: flex;
+    height: 40px;
+    width: 100%;
+  }
+
+  &__menu-list{
+    display: flex;
+    line-height: 30px;
+  }
+  &__menu-categories{
+    margin-left: $space-md;
+  }
+  &__menu-name{
+    color: #7d7c7a;
+    text-decoration: none;
+  }
+  &__menu-name:hover{
+    border-bottom: 2px solid #000000;
+  }
+  &__account {
+    width: 40px;
+    height: 40px;
+    margin-left: $space-md;
+  }
+
+  &__search {
+    display: none;
+    margin-left: $space-md;
+  }
+
+  &__basket {
+    width: 40px;
+    height: 40px;
+    margin-left: $space-md;
+  }
+}
+@include bp_sm {
+}
+@include bp_md {
+  .header {
+    &__hamburger {
+      display: none;
+    }
+  }
+}
+@include bp_lg {
+}

@@ -1,0 +1,57 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  padding: $space-md;
+  background: $main-bg;
+  
+  &__menu {
+    height: 40px;
+    width: 40px;
+    order: 1;
+    margin-left: $space-md;
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: flex-start;
+    height: 40px;
+    width: 100%;
+  }
+
+  &__logo-link {
+    display: flex;
+    height: 40px;
+    width: 220px;
+  }
+
+  &__account {
+    width: 40px;
+    height: 40px;
+    margin-left: $space-md;
+  }
+
+  &__search {
+    display: none;
+    margin-left: $space-md;
+  }
+
+  &__basket {
+    width: 40px;
+    height: 40px;
+    margin-left: $space-md;
+  }
+}
+@include bp_sm {
+}
+@include bp_md {
+  .header {
+    &__menu {
+      display: none;
+    }
+  }
+}
+@include bp_lg {
+}

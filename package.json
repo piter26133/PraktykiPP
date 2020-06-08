@@ -6,7 +6,8 @@
   "scripts": {
     "build": "parcel build index.html --out-dir public",
     "watch": "parcel watch index.html --out-dir public",
-    "server": "parcel index.html --out-dir public"
+    "server": "parcel index.html --out-dir public",
+    "server_pro": "parcel likeapro.html --out-dir public"
   },
   "author": "Piotr Paszek",
   "license": "ISC",

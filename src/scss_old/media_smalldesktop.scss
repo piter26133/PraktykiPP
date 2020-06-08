@@ -13,10 +13,12 @@
         order: 1;
         width: 10vw;
     }
+
     .header_logo_link>img {
         height: 5vh;
         width: 8vw;
-      }
+    }
+
     .header_search {
         order: 2;
         width: 50vw;
@@ -31,10 +33,12 @@
         width: 30vw;
         margin-left: 5vw;
     }
-    main{
+
+    main {
         min-height: 87vh;
     }
-    .productprice{
+
+    .productprice {
         font-size: 1.2rem;
     }
 }

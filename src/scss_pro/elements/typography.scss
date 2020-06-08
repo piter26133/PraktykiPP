@@ -1,0 +1,50 @@
+html {
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+// Przy tworzeniu typografii warto wybrać stronę, w którą będą ustawione marginesy. 
+// Ja wolę ustawiać dolny margines. Nigdy nie mam problemów z potrzebą resetowania górnego a w razie potrzeby zeruję marginesy dla ostatniech elementu w bloku.
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 3.2rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+h4 {
+    font-size: 2.2rem;
+}
+
+h5 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+@include bp_sm {
+}
+@include bp_md {
+}
+@include bp_lg {
+}

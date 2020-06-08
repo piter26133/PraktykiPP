@@ -1,0 +1,13 @@
+.main {
+    padding: 80px $space-md 80px;
+    &__page__name{
+        text-align: center;
+    }
+}
+
+@include bp_sm {
+}
+@include bp_md {
+}
+@include bp_lg {
+}

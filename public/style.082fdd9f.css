@@ -1,9 +1,22 @@
-body {
-  font-family: "Lato", sans-serif;
-}
-
 html {
   max-width: 100vw;
+  min-height: 100vh;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+main {
+  min-height: 100%;
+  flex: 1 1 100%;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -54,314 +67,160 @@ table {
   border-spacing: 0;
 }
 
-header {
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+h4 {
+  font-size: 2.2rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  height: 15vh;
-  padding: 1vh;
-  box-sizing: border-box;
-  background-color: #a1d6e2;
+  padding: 20px;
+  background: #fff;
 }
-
-.header_logo {
-  order: 1;
-  width: 30vw;
-  height: 5vh;
+.header__hamburger {
+  height: 40px;
+  width: 40px;
+  margin-left: 20px;
 }
-
-.header_logo_link > img {
-  height: 6vh;
-  width: 20vw;
-}
-
-.header_basket {
-  order: 2;
-  width: 60vw;
-  height: 5vh;
+.header__logo {
   display: flex;
-  align-items: center;
+  justify-content: flex-start;
+  height: 40px;
+  width: auto;
+  margin-right: 70px;
+}
+.header__logo-link {
+  display: flex;
+  height: 40px;
+  width: 220px;
+}
+.header__menu {
+  display: flex;
+  height: 40px;
+  width: 100%;
+}
+.header__menu-list {
+  display: flex;
+  line-height: 30px;
+}
+.header__menu-categories {
+  margin-left: 20px;
+}
+.header__menu-name {
+  color: #7d7c7a;
+  text-decoration: none;
+}
+.header__menu-name:hover {
+  border-bottom: 2px solid #000000;
+}
+.header__account {
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+}
+.header__search {
+  display: none;
+  margin-left: 20px;
+}
+.header__basket {
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+}
+
+@media (min-width: 1024px) {
+  .header__hamburger {
+    display: none;
+  }
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.main {
+  padding: 80px 20px 80px;
+}
+.main__page__name {
+  text-align: center;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+}
+.posts__filters {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: 50px;
+}
+.posts__sort, .posts__filter {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin: 10px;
+  height: 45px;
+  min-width: 60px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.posts__sort img, .posts__filter img {
+  max-width: 40px;
+}
+.social {
+  display: flex;
   justify-content: space-between;
 }
 
-.header_basket_flex {
-  display: flex;
-  align-items: center;
-}
-
-.header_basket_elements {
-  margin-left: 2vw;
-}
-
-.header_basket_link_img {
-  height: 3.5vh;
-  width: 3, 5vw;
-}
-
-.header_search {
-  width: 100vw;
-  height: 5vh;
-  order: 4;
-  display: flex;
-  justify-content: center;
-}
-
-.header_search_textarea {
-  width: 75vw;
-  height: 5vh;
-}
-
-.header_search_search {
-  width: 20vw;
-  height: 5vh;
-}
-
-.header_search_search,
-.header_search_textarea {
-  background-color: #f1f1f1;
-  border: 1px solid #BCBABE;
-}
-
-main {
-  min-height: auto;
-}
-
-.mainmenu {
-  height: 20vh;
-  grid-template-rows: 10vh;
-  display: grid;
-  grid-template-areas: "a b c" "d e f";
-}
-
-.gridarea1 {
-  grid-area: a;
-}
-
-.gridarea2 {
-  grid-area: b;
-}
-
-.gridarea3 {
-  grid-area: c;
-}
-
-.gridarea4 {
-  grid-area: d;
-}
-
-.gridarea5 {
-  grid-area: e;
-}
-
-.gridarea6 {
-  grid-area: f;
-}
-
-.nav_categorries {
-  display: flex;
-  flex-wrap: wrap;
-  text-decoration: none;
-  color: black;
-  justify-content: center;
-  align-items: center;
-}
-
-.nav_categorries_img {
-  width: 7vw;
-  height: 7vh;
-  margin-right: 1vw;
-}
-
-.nav_categorries_description {
-  width: 7vw;
-  height: 7vh;
-  line-height: 7vh;
-}
-
-nav > a {
-  transition: background-color 0.3s;
-}
-
-nav > a:hover {
-  background-color: #1995ad;
-}
-
-.sort {
-  width: 99vw;
-  height: 10vh;
-  margin-top: 2vh;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.sort_women,
-.sort_men {
-  display: none;
-}
-
-.sort_sort {
-  width: 85vw;
-  height: 10vh;
-  text-align: right;
-}
-
-.sort_filter {
-  width: 14vw;
-  height: 10vh;
-  text-align: center;
-}
-
-.sort_sort_img,
-.sort_filter_img {
-  width: 3vw;
-  height: 43h;
-}
-
-.c-article-listing {
-  display: flex;
-  max-width: 100%;
-  margin-left: 2vw;
-  text-align: center;
-}
-
-.productname {
-  font-weight: bold;
-  margin-bottom: 1vh;
-}
-
-.number_and_size,
-.productprice {
-  font-size: 0.8rem;
-}
-
-form > div {
-  width: 100%;
-  margin-top: 1vh;
-}
-
-footer {
-  line-height: 4.5vh;
-  display: grid;
-  grid-template-columns: auto auto auto;
-  background-color: #BCBABE;
-}
-
-.footer_contactus {
-  text-align: center;
-}
-
-.footer_contactus > a {
-  color: black;
-  text-decoration: none;
-}
-
-footer > div > a:hover {
-  color: blue;
-  transition: color 0.5s;
-}
-
-.footer_copy {
-  text-align: center;
-}
-
-.footer_socialmedia {
-  padding-top: 0.5vh;
-  display: flex;
-  align-items: right;
-  box-sizing: border-box;
-}
-
-.footer_socialmedia_img {
-  height: 4vh;
-}
-
-/*zastanawia mnie jedynie dlaczego pod footerem jest jeszcze 
-pusta przestrzen pokazuje ze to obiekt html a on ma marginy 0 */
-@media only screen and (min-width: 768px) {
-  body,
-input {
-    font-size: 1.4rem;
-  }
-
-  .productprice {
-    font-size: 1rem;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  body,
-input {
-    font-size: 1.5rem;
-  }
-
-  header {
-    height: 7vh;
-  }
-
-  .header_logo {
-    order: 1;
-    width: 10vw;
-  }
-
-  .header_logo_link > img {
-    height: 5vh;
-    width: 8vw;
-  }
-
-  .header_search {
-    order: 2;
-    width: 50vw;
-  }
-
-  input {
-    line-height: 3.5vh;
-  }
-
-  .header_basket {
-    order: 3;
-    width: 30vw;
-    margin-left: 5vw;
-  }
-
-  main {
-    min-height: 87vh;
-  }
-
-  .productprice {
-    font-size: 1.2rem;
-  }
-}
-@media only screen and (min-width: 1440px) {
-  body,
-input {
-    font-size: 1.6rem;
-  }
-
-  header {
-    height: 8vh;
-  }
-
-  .header_logo {
-    order: 1;
-    width: 10vw;
-  }
-
-  .header_search {
-    order: 2;
-    width: 50vw;
-  }
-
-  .header_basket {
-    order: 3;
-    width: 30vw;
-    margin-left: 5vw;
-  }
-
-  main {
-    min-height: 86vh;
-  }
-
-  .productprice {
-    font-size: 1.4rem;
-  }
+.social-item__link {
+  display: block;
+  max-width: 30px;
+  margin-left: 20px;
 }
 
 /*# sourceMappingURL=/style.082fdd9f.css.map */

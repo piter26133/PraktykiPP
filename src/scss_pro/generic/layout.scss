@@ -1,0 +1,27 @@
+html{
+    max-width: 100vw;
+    min-height: 100vh;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+main {
+    min-height: 100%;
+    flex: 1 1 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@include bp_sm {
+}
+@include bp_md {
+}
+@include bp_lg {
+}
