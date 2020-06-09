@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,74 +12,97 @@
         <link rel="icon" href="/src/img/favicon.ico">
     </head>
 </head>
+
 <body>
-    <header>
-        <div class="header_logo">
-            <a href="/index.html" class="header_logo_link">
-                <img class="header_logo_link_img" src="/src/img/logo.png" alt="logo sklepu">
+    <header class="header">
+        <nav class="header__hamburger">
+            <img src="/src/img/open-menu.svg">
+        </nav>
+        <div class="header__logo">
+            <a href="/index.html" class="header__logo-link">
+                <img class="header__logo-img" src="/src/img/logo.svg" alt="logo sklepu">
             </a>
         </div>
-        <form class="header_search">
-            <input type="search" class="header_search_textarea" placeholder="Wyszukaj produkt">
-            <input type="submit" class="header_search_search" value="wyszukaj">
-        </form>
-        <div class="header_basket">
-            <div class="header_basket_flex">
-                <a href="/subpages/shoppingcart.html" class="header_basket_elemnts">
-                    <img src="/src/img/koszyk.svg" alt="zdjęcie koszyka na zakupy" class="header_basket_link_img">
-                </a>
-                <span class="header_basket_elements" class="header_basket_elements_products">Produkty: </span>
-                <span class="header_basket_elements" class="header_basket_elements_number">0</span>
-            </div>
-            <div class="header_basket_flex">
-                <span class="header_basket_elements" class="header_basket_elements_hello">Witaj,</span>
-                <span class="header_basket_elements" class="header_basket_elements_who">kliencie</span>
-            </div>
+        <nav class="header__menu">
+            <ul class="header__menu-list">
+                <li class="header__menu-categories">
+                    <a href="/subpages/ubrania.html" class="header__menu-name">Ubrania</a>
+                </li>
+                <li class="header__menu-categories">
+                    <a href="/subpages/akcesoria.html" class="header__menu-name">Akcesoria</a>
+                </li>
+                <li class="header__menu-categories">
+                    <a href="/subpages/buty.html" class="header__menu-name">Buty</a>
+                </li>
+                <li class="header__menu-categories">
+                    <a href="/subpages/sport.html" class="header__menu-name">Sport</a>
+                </li>
+                <li class="header__menu-categories">
+                    <a href="/subpages/promocje.html" class="header__menu-name">Promocje</a>
+                </li>
+                <li class="header__menu-categories">
+                    <a href="/subpages/nowosci.html" class="header__menu-name">Nowości</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__account">
+            <img src="/src/img/account.svg">
+        </div>
+        <div class="header__search">
+            <img src="/src/img/search.svg">
+        </div>
+        <div class="header__basket">
+            <img src="/src/img/koszyk.svg">
         </div>
     </header>
-    <main>
-        <section class="maincontent">
-            <nav class="sort">
-                <div class="sort_sort">
-                    <img src="/src/img/sort.svg" alt="selektor" class="sort_sort_img">
-                    <div class="sort_sort_selectors">
-                        <!--tutaj chcę zrobić sortowanie wg ceny dol gora itp. ale na razie nie mam
-                    pojecia jak-->
-                    </div>
+    <main class="main">
+        <div class="main__page">
+            <h1 class="main__page__name">Nowości</h1>
+        </div>
+        <section class="posts">
+            <div class="posts__filters">
+                <div class="posts__sort">
+                    <img src="/src/img/sort.svg">
                 </div>
-                <div class="sort_filter">
-                    <img src="/src/img/filter.svg" alt="filtry" class="sort_filter_img">
-                    <div class="sort_filter_categories">
-                        <!--a tutaj chcę zrobić żeby moża bylo wybrac kategorie z tych co są u
-                        gory ubrania promocje itp. Też na razie nie mam pojęcia jak-->
-                    </div>
+                <div class="posts__filter">
+                    <img src="/src/img/woman.svg">
                 </div>
+                <div class="posts__filter">
+                    <img src="/src/img/man.svg">
                 </div>
-                <div class="maincontent_content">
-                    <h1>posty</h1>
+                <div class="posts__filter">
+                    <img src="/src/img/filter.svg">
+                </div>
+            </div>
+            <section class="posts__listing">
+            </section>
+
+            <script id="post-template" type="text/template">
+                <article>
+                <h3>{{name}}</h3>
+                <p>{{price}} PLN</p>
+              </article>
+            </script>
         </section>
     </main>
-    <footer>
-        <div class="footer_contactus"><a href="/subpages/contactus.html"> Contact us</a></div>
-        <div class="footer_copy">&copy; Piotr Paszek 2020</div>
-        <div class="footer_socialmedia">
-            <div class="footer_socialmedia_twitter">
-                <a href="https://twitter.com" target="_blank" class="footer_socialmedia_description">
-                    <img src="/src/img/twitter.svg" alt="twitter logo" class="footer_socialmedia_img">
+    <footer class="footer">
+        <div class="contact">
+            <a href="/subpages/contactus.html" class="contact__link">Contact Us</a>
+        </div>
+        <div class="social">
+            <div class="social-item">
+                <a href="https://www.instagram.com" target="__blank" class="social-item__link">
+                    <img src="/src/img/instagram.svg" alt="instagram logo" class="social-item__img">
                 </a>
             </div>
-            <div class="footer_socialmedia_instagram">
-                <a href="https://www.instagram.com" target="_blank" class="footer_socialmedia_description">
-                    <img src="/src/img/instagram.svg" alt="instagram logo" class="footer_socialmedia_img">
-                </a>
-            </div>
-            <div class="footer_socialmedia_facebook">
-                <a href="https://www.facebook.com/" target="_blank" class="footer_socialmedia_description">
-                    <img src="/src/img/facebookd.svg" alt="facebook logo" class="footer_socialmedia_img">
+            <div class="social-item">
+                <a href="https://www.facebook.com/" target="__blank" class="social-item__link">
+                    <img src="/src/img/facebookd.svg" alt="facebook logo" class="social-item__img">
                 </a>
             </div>
         </div>
     </footer>
-    <script src="/src/js/index.js"></script>
+    <script src="/src/js/index.js" async></script>
 </body>
+
 </html>
