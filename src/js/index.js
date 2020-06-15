@@ -1,5 +1,5 @@
-var listing = document.querySelector('.c-article-listing');
-var template = document.getElementById("article-template");
+var listing = document.querySelector('.posts__listing');
+var template = document.getElementById('post-template');
 var templateHtml = template.innerHTML;
 var listHtml = "";
 
@@ -9,9 +9,15 @@ function processArticle(art) {
     .replace(/{{alt}}/g, art.alt)
     .replace(/{{name}}/g, art.name)
     .replace(/{{price}}/g, art.price)
-    .replace(/{{sizes}}/g, art.sizes);
+    .replace(/{{sizes}}/g, art?.sizes?.map(function(item) {
+      return `<label>
+              <input type="radio" name="size" value="${item}" />
+                ${item}
+              </label>`
+    }).join(''));
   listing.insertAdjacentHTML('beforeend', temp);
 }
+
 
 function loadJSON(url, callback) {   
 
@@ -26,9 +32,9 @@ function loadJSON(url, callback) {
     xobj.send(null);  
  }
 
-loadJSON('http://www.mocky.io/v2/5ed77d39320000cc5c27485f', function(data) {
+loadJSON('https://run.mocky.io/v3/e67f8676-6ef9-4991-b89d-7eb601ed3a38', function(data) {
   var productsObject = JSON.parse(data); 
   productsObject.products.filter(function(item){
-    return item.category.indexOf("NEW") >= 0;
+    return item.category.indexOf("ALL") >= 0;
   }).map(processArticle);
 })

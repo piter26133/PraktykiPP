@@ -7,7 +7,7 @@
         "sex": "man",
         "name": "Koszula Lacoste",
         "price": 150,
-        "src": "/src/product_img/koszula.jpg",
+        "src": "/product_img/koszula.jpg",
         "alt": "Koszula męska Lacoste"
     },
     {
@@ -23,6 +23,7 @@
     {
         "id": 3,
         "category": ["NEW","ACCESORIES","ALL"],
+        "sizes": ["one-size"],
         "sex": "woman",
         "name": "Okulary Słoneczne Ray-Ban",
         "price": 600,
@@ -47,7 +48,7 @@
         "name": "Bluzka Zara",
         "price": 100,
         "src": "",
-        "alt": "Bluzka damksa"
+        "alt": "Bluzka damska"
     }
 ]
 }

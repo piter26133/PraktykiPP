@@ -264,6 +264,26 @@ img {
   justify-content: space-between;
   padding: 20px;
 }
+.footer__contact {
+  width: 90%;
+}
+.footer__contact-link {
+  color: #000000;
+  text-decoration: none;
+}
+.footer__contact-link:hover {
+  border-bottom: 2px solid #000000;
+}
+.footer__social {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.footer__social-item {
+  margin-left: 20px;
+}
+.footer__social-item__img {
+  height: 3vh;
+}
 
 .main {
   padding: 80px 20px 80px;

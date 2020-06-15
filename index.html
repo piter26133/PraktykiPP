@@ -85,28 +85,31 @@
             </section>
 
             <script id="post-template" type="text/template">
-                <article>
-                <img src="{{src}}" alt="{{alt}}">
-                <h3>{{name}}</h3>
-                <span>{{price}} PLN</span>
-                <p>{{sizes}}</p>
-              </article>
+                <article class="post-template-all">
+                    <a href="produkt.html">
+                        <img src="{{src}}" alt="{{alt}}" class="post-template-img">
+                    </a>
+                    <h3 class="post-template-name">{{name}}</h3>
+                    <span class="post-template-price">{{price}} PLN</span>
+                    <div class="post-template-sizes">{{sizes}}</div>
+                    <button>dodaj do koszyka</button>
+                </article>
             </script>
         </section>
     </main>
     <footer class="footer">
-        <div class="contact">
-            <a href="/subpages/contactus.html" class="contact__link">Contact Us</a>
+        <div class="footer__contact">
+            <a href="/subpages/contactus.html" class="footer__contact-link">Contact Us</a>
         </div>
-        <div class="social">
-            <div class="social-item">
-                <a href="https://www.instagram.com" target="__blank" class="social-item__link">
-                    <img src="src/img/instagram.svg" alt="instagram logo" class="social-item__img">
+        <div class="footer__social">
+            <div class="footer__social-item">
+                <a href="https://www.instagram.com" target="__blank" class="footer__social-item__link">
+                    <img src="src/img/instagram.svg" alt="instagram logo" class="footer__social-item__img">
                 </a>
             </div>
-            <div class="social-item">
-                <a href="https://www.facebook.com/" target="__blank" class="social-item__link">
-                    <img src="src/img/facebookd.svg" alt="facebook logo" class="social-item__img">
+            <div class="footer__social-item">
+                <a href="https://www.facebook.com/" target="__blank" class="footer__social-item__link">
+                    <img src="src/img/facebookd.svg" alt="facebook logo" class="footer__social-item__img">
                 </a>
             </div>
         </div>

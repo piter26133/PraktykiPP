@@ -118,13 +118,17 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"src/js/index.js":[function(require,module,exports) {
-var listing = document.querySelector('.c-article-listing');
-var template = document.getElementById("article-template");
+var listing = document.querySelector('.posts__listing');
+var template = document.getElementById('post-template');
 var templateHtml = template.innerHTML;
 var listHtml = "";
 
 function processArticle(art) {
-  var temp = templateHtml.replace(/{{src}}/g, art.src).replace(/{{alt}}/g, art.alt).replace(/{{name}}/g, art.name).replace(/{{price}}/g, art.price).replace(/{{sizes}}/g, art.sizes);
+  var _art$sizes;
+
+  var temp = templateHtml.replace(/{{src}}/g, art.src).replace(/{{alt}}/g, art.alt).replace(/{{name}}/g, art.name).replace(/{{price}}/g, art.price).replace(/{{sizes}}/g, art === null || art === void 0 ? void 0 : (_art$sizes = art.sizes) === null || _art$sizes === void 0 ? void 0 : _art$sizes.map(function (item) {
+    return "<label>\n              <input type=\"radio\" name=\"size\" value=\"".concat(item, "\" />\n                ").concat(item, "\n              </label>");
+  }).join(''));
   listing.insertAdjacentHTML('beforeend', temp);
 }
 
@@ -142,10 +146,10 @@ function loadJSON(url, callback) {
   xobj.send(null);
 }
 
-loadJSON('http://www.mocky.io/v2/5ed77d39320000cc5c27485f', function (data) {
+loadJSON('https://run.mocky.io/v3/e67f8676-6ef9-4991-b89d-7eb601ed3a38', function (data) {
   var productsObject = JSON.parse(data);
   productsObject.products.filter(function (item) {
-    return item.category.indexOf("NEW") >= 0;
+    return item.category.indexOf("ALL") >= 0;
   }).map(processArticle);
 });
 },{}],"../../AppData/Roaming/npm/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
@@ -176,7 +180,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53886" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56136" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
