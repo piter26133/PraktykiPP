@@ -1,6 +1,5 @@
 html {
   max-width: 100vw;
-<<<<<<< HEAD
   min-height: 100vh;
   height: 100%;
 }
@@ -18,12 +17,6 @@ main {
 
 * {
   box-sizing: border-box;
-=======
->>>>>>> b439844e6778f6961613312d8d2d31c1e946053e
-}
-
-body {
-  font-family: "Lato", sans-serif;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -74,34 +67,8 @@ table {
   border-spacing: 0;
 }
 
-<<<<<<< HEAD
 body {
   font-family: "Lato", sans-serif;
-=======
-html {
-  font-family: "Lato", sans-serif;
-}
-
-p {
-  font-size: 1rem;
-  line-height: 1.5;
-  margin-bottom: 1.5rem;
-}
-
-header {
-  display: flex;
-  flex-wrap: wrap;
-  height: 15vh;
-  padding: 1vh;
-  box-sizing: border-box;
-  background-color: #a1d6e2;
-}
-
-.header_logo {
-  order: 1;
-  width: 30vw;
-  height: 5vh;
->>>>>>> b439844e6778f6961613312d8d2d31c1e946053e
 }
 
 h1,
@@ -143,7 +110,6 @@ img {
   display: block;
 }
 
-<<<<<<< HEAD
 .header {
   position: fixed;
   top: 0;
@@ -286,13 +252,6 @@ img {
   width: 40px;
   height: 40px;
   margin-left: 20px;
-=======
-footer {
-  line-height: 4.5vh;
-  display: grid;
-  grid-template-columns: auto auto auto;
-  background-color: #BCBABE;
->>>>>>> b439844e6778f6961613312d8d2d31c1e946053e
 }
 .header__basket {
   width: 40px;
@@ -324,7 +283,6 @@ footer {
   margin-right: -10px;
   margin-bottom: 50px;
 }
-<<<<<<< HEAD
 .posts__sort, .posts__filter {
   display: flex;
   justify-content: center;
@@ -348,10 +306,5 @@ footer {
   max-width: 30px;
   margin-left: 20px;
 }
-=======
-
-/*zastanawia mnie jedynie dlaczego pod footerem jest jeszcze 
-pusta przestrzen pokazuje ze to obiekt html a on ma marginy 0 */
->>>>>>> b439844e6778f6961613312d8d2d31c1e946053e
 
 /*# sourceMappingURL=/style.082fdd9f.css.map */
