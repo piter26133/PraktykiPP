@@ -1,4 +1,5 @@
 @mixin bp-sm {
+
     // Tablet
     @media (min-width: 768px) {
         @content;
@@ -6,6 +7,7 @@
 }
 
 @mixin bp-md {
+
     // Small Desktop
     @media (min-width: 1024px) {
         @content;
@@ -13,6 +15,7 @@
 }
 
 @mixin bp-lg {
+
     // Large Desktop
     @media (min-width: 1440px) {
         @content;

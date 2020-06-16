@@ -1,7 +1,7 @@
-.posts {
+.post {
     display: flex;
     flex-direction: column;
-    
+
     &__filters {
         display: flex;
         justify-content: flex-end;
@@ -26,13 +26,46 @@
         }
     }
 
+    &__all {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     &__listing {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__template {
+        display: block;
+        width: 50%;
+
+        @include bp-sm {
+            width: calc(100%/3);
+        }
+
+        @include bp-md {
+            width: 25%;
+        }
+    }
+
+    &__template-link {
+        color: #000000;
+        text-decoration: none;
+    }
+
+    &__template-img,
+    &__template-name,
+    &__template-price,
+    &__template-sizes,
+    &__template-cart {
+        margin-top: $space-md;
+        text-align: center;
     }
 }
 
-@include bp_sm {
-}
-@include bp_md {
-}
-@include bp_lg {
-}
+@include bp_sm {}
+
+@include bp_md {}
+
+@include bp_lg {}

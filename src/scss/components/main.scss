@@ -1,15 +1,13 @@
 .main {
     padding: 80px $space-md 80px;
-    &__page__name{
+
+    &__page__name {
         text-align: center;
     }
 }
-.post-template-all{
 
-}
-@include bp_sm {
-}
-@include bp_md {
-}
-@include bp_lg {
-}
+@include bp_sm {}
+
+@include bp_md {}
+
+@include bp_lg {}

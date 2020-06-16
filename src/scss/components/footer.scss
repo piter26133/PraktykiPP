@@ -3,32 +3,36 @@
     justify-content: space-between;
     padding: $space-md;
 
-    &__contact{
+    &__contact {
         width: 90%;
     }
-    &__contact-link{
+
+    &__contact-link {
         color: #000000;
         text-decoration: none;
     }
-    &__contact-link:hover{
+
+    &__contact-link:hover {
         border-bottom: 2px solid #000000;
     }
-    &__social{
+
+    &__social {
         display: flex;
-        flex-direction: row-reverse; 
+        flex-direction: row-reverse;
     }
-    &__social-item{
+
+    &__social-item {
         margin-left: $space-md;
     }
-    &__social-item__img{
+
+    &__social-item__img {
         height: 3vh;
     }
 }
 
 
-@include bp_sm {
-}
-@include bp_md {
-}
-@include bp_lg {
-}
+@include bp_sm {}
+
+@include bp_md {}
+
+@include bp_lg {}

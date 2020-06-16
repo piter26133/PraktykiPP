@@ -111,20 +111,24 @@
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 
   }
-  &__hamburger-name{
+
+  &__hamburger-name {
     padding: 10px 0;
     width: 100%;
     display: block;
   }
-  &__hamburger-checkbox:checked~&__hamburger-list{
+
+  &__hamburger-checkbox:checked~&__hamburger-list {
     transform: scale(1.0, 1.0);
-  opacity: 1;
+    opacity: 1;
   }
+
   &__logo {
     display: flex;
     height: 40px;
     width: 100%;
     margin-right: $logo_space-lg;
+
     @include bp-md {
       width: auto;
     }

@@ -57,32 +57,43 @@
     </header>
     <main class="main">
         <div class="main__page">
-            <h1 class="main__page__name">Sport</h1>
+            <h1 class="main__page__name">Strona główna</h1>
         </div>
-        <section class="posts">
-            <div class="posts__filters">
-                <div class="posts__sort">
+        <section class="post">
+            <div class="post__filters">
+                <div class="post__sort">
                     <img src="/sort.ee65ee8f.svg">
                 </div>
-                <div class="posts__filter">
+                <div class="post__filter">
                     <img src="/woman.19b50f27.svg">
                 </div>
-                <div class="posts__filter">
+                <div class="post__filter">
                     <img src="/man.5121f941.svg">
                 </div>
-                <div class="posts__filter">
+                <div class="post__filter">
                     <img src="/filter.aa38bd3e.svg">
                 </div>
             </div>
-            <section class="posts__listing">
-            </section>
+            <section class="post__all">
+                <section class="post__listing">
+                </section>
 
-            <script id="post-template" type="text/template">
-                <article>
-                <h3>{{name}}</h3>
-                <p>{{price}} PLN</p>
-              </article>
+                <script id="post-template" type="text/template">
+                    <article class="post__template">
+                    <a href="/subpages/produkt.html" class="post__template-link">
+                        <img src="{{src}}" alt="{{alt}}" class="post__template-img">
+                        <h3 class="post__template-name">{{name}}</h3>
+                    </a>
+                    <div class="post__template-price">
+                        <span class="post__template-price-value">{{price}} PLN</span>
+                    </div>
+                    <div class="post__template-sizes">{{sizes}}</div>
+                    <div class="post__template-cart">
+                        <button class="post__template-cart-button">dodaj do koszyka</button>
+                    </div>
+                </article>
             </script>
+            </section>
         </section>
     </main>
     <footer class="footer">

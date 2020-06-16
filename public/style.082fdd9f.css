@@ -292,18 +292,18 @@ img {
   text-align: center;
 }
 
-.posts {
+.post {
   display: flex;
   flex-direction: column;
 }
-.posts__filters {
+.post__filters {
   display: flex;
   justify-content: flex-end;
   margin-left: -10px;
   margin-right: -10px;
   margin-bottom: 50px;
 }
-.posts__sort, .posts__filter {
+.post__sort, .post__filter {
   display: flex;
   justify-content: center;
   padding: 10px;
@@ -313,9 +313,40 @@ img {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
-.posts__sort img, .posts__filter img {
+.post__sort img, .post__filter img {
   max-width: 40px;
 }
+.post__all {
+  display: flex;
+  flex-wrap: wrap;
+}
+.post__listing {
+  display: flex;
+  flex-wrap: wrap;
+}
+.post__template {
+  display: block;
+  width: 50%;
+}
+@media (min-width: 768px) {
+  .post__template {
+    width: calc(100%/3);
+  }
+}
+@media (min-width: 1024px) {
+  .post__template {
+    width: 25%;
+  }
+}
+.post__template-link {
+  color: #000000;
+  text-decoration: none;
+}
+.post__template-img, .post__template-name, .post__template-price, .post__template-sizes, .post__template-cart {
+  margin-top: 20px;
+  text-align: center;
+}
+
 .social {
   display: flex;
   justify-content: space-between;

@@ -1,54 +1,53 @@
 {
-    "products":[
-    {
-        "id": 1,
-        "category": ["NEW","CLOTHES","ALL"],
-        "sizes": ["S","M","L","XL","XXL"],
-        "sex": "man",
-        "name": "Koszula Lacoste",
-        "price": 150,
-        "src": "/product_img/koszula.jpg",
-        "alt": "Koszula męska Lacoste"
-    },
-    {
-        "id": 2,
-        "category": ["SHOES","ALL"],
-        "sizes": [39,40,42,43,44,45],
-        "sex": "man",
-        "name": "Buty Puma",
-        "price": 300,
-        "src": "",
-        "alt": "Buty męskie Puma"
-    },
-    {
-        "id": 3,
-        "category": ["NEW","ACCESORIES","ALL"],
-        "sizes": ["one-size"],
-        "sex": "woman",
-        "name": "Okulary Słoneczne Ray-Ban",
-        "price": 600,
-        "src": "",
-        "alt": " Damskie okulary słoneczne"
-    },
-    {
-        "id": 4,
-        "category": ["NEW","SPORT","SHOES","ALL"],
-        "sizes": [39,40,41,44,45],
-        "sex": "man",
-        "name": "Korki Addidas",
-        "price": 250,
-        "src": "",
-        "alt": "Korki męskie Addidas"
-    },
-    {
-        "id": 5,
-        "category": ["ClOTHES","PROMO","ALL"],
-        "sizes": ["S","M","L","XL","XXL"],
-        "sex": "woman",
-        "name": "Bluzka Zara",
-        "price": 100,
-        "src": "",
-        "alt": "Bluzka damska"
-    }
-]
+    "products": [{
+            "id": 1,
+            "category": ["NEW", "CLOTHES", "ALL"],
+            "sizes": ["S", "M", "L", "XL", "XXL"],
+            "sex": "man",
+            "name": "Koszula Lacoste",
+            "price": 150,
+            "src": "/product_img/koszula.jpg",
+            "alt": "Koszula męska Lacoste"
+        },
+        {
+            "id": 2,
+            "category": ["SHOES", "ALL"],
+            "sizes": [39, 40, 42, 43, 44, 45],
+            "sex": "man",
+            "name": "Buty Puma",
+            "price": 300,
+            "src": "/product_img/buty-puma.jpg",
+            "alt": "Buty męskie Puma"
+        },
+        {
+            "id": 3,
+            "category": ["NEW", "ACCESORIES", "ALL"],
+            "sizes": ["one-size"],
+            "sex": "woman",
+            "name": "Okulary Słoneczne Ray-Ban",
+            "price": 600,
+            "src": "/product_img/rayban.jpg",
+            "alt": " Damskie okulary słoneczne"
+        },
+        {
+            "id": 4,
+            "category": ["NEW", "SPORT", "SHOES", "ALL"],
+            "sizes": [39, 40, 41, 44, 45],
+            "sex": "man",
+            "name": "Korki Addidas",
+            "price": 250,
+            "src": "/product_img/adidas-korki.jpg",
+            "alt": "Korki męskie Addidas"
+        },
+        {
+            "id": 5,
+            "category": ["ClOTHES", "PROMO", "ALL"],
+            "sizes": ["S", "M", "L", "XL", "XXL"],
+            "sex": "woman",
+            "name": "Bluzka Zara",
+            "price": 100,
+            "src": "/product_img/zara-bluzka.jpg",
+            "alt": "Bluzka damska"
+        }
+    ]
 }
