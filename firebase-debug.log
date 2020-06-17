@@ -1,0 +1,72 @@
+[debug] [2020-06-17T12:39:39.243Z] ----------------------------------------------------------------------
+[debug] [2020-06-17T12:39:39.245Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Piotr\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-06-17T12:39:39.245Z] CLI Version:   8.4.2
+[debug] [2020-06-17T12:39:39.245Z] Platform:      win32
+[debug] [2020-06-17T12:39:39.245Z] Node Version:  v10.17.0
+[debug] [2020-06-17T12:39:39.246Z] Time:          Wed Jun 17 2020 14:39:39 GMT+0200 (GMT+02:00)
+[debug] [2020-06-17T12:39:39.246Z] ----------------------------------------------------------------------
+[debug] [2020-06-17T12:39:39.246Z] 
+[debug] [2020-06-17T12:39:39.259Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-06-17T12:39:39.259Z] > authorizing via signed-in user
+[debug] [2020-06-17T12:39:39.260Z] [iam] checking project praktyki-438ed for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-06-17T12:39:39.261Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-06-17T12:39:39.261Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-06-17T12:39:39.728Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 17 Jun 2020 12:37:58 GMT","server":"scaffolding on HTTPServer2","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-28=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-06-17T12:39:39.739Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/praktyki-438ed:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-06-17T12:39:40.855Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 17 Jun 2020 12:37:59 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=735","alt-svc":"h3-28=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-06-17T12:39:40.856Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/praktyki-438ed  
+ 
+[debug] [2020-06-17T12:39:41.436Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 17 Jun 2020 12:38:00 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-28=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'praktyki-438ed'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-06-17T12:39:41.469Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/praktyki-438ed/versions  
+ {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-06-17T12:39:43.686Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 17 Jun 2020 12:38:02 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-28=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[praktyki-438ed]: beginning deploy... 
+[info] i  hosting[praktyki-438ed]: found 62 files in public 
+[debug] [2020-06-17T12:39:43.811Z] [hosting] hash cache [cHVibGlj] stored for 62 files
+[debug] [2020-06-17T12:39:43.812Z] [hosting][hash queue][FINAL] {"max":76,"min":0,"avg":21.626096736857825,"active":0,"complete":62,"success":62,"errored":0,"retried":0,"total":62,"elapsed":85}
+[debug] [2020-06-17T12:39:43.812Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/praktyki-438ed/versions/3eb9e7fc3eb351fe:populateFiles  
+ <request body omitted>
+[debug] [2020-06-17T12:39:45.324Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 17 Jun 2020 12:38:04 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-28=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-06-17T12:39:45.334Z] [hosting][populate queue][FINAL] {"max":1515,"min":1515,"avg":1515,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1524}
+[debug] [2020-06-17T12:39:45.338Z] [hosting] uploads queued: 20
+[debug] [2020-06-17T12:39:49.109Z] [hosting][upload queue][FINAL] {"max":3784,"min":2492,"avg":2671.65,"active":0,"complete":20,"success":20,"errored":0,"retried":0,"total":20,"elapsed":3785}
+[info] +  hosting[praktyki-438ed]: file upload complete 
+[debug] [2020-06-17T12:39:49.113Z] [hosting] deploy completed after 5423ms
+[debug] [2020-06-17T12:39:50.522Z] [
+  {
+    "config": {
+      "public": "public",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "site": "praktyki-438ed"
+    },
+    "site": "praktyki-438ed",
+    "version": "sites/praktyki-438ed/versions/3eb9e7fc3eb351fe"
+  }
+]
+[info] i  hosting[praktyki-438ed]: finalizing version... 
+[debug] [2020-06-17T12:39:50.525Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/praktyki-438ed/versions/3eb9e7fc3eb351fe?updateMask=status  
+ {"status":"FINALIZED"}
+[debug] [2020-06-17T12:39:53.105Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 17 Jun 2020 12:38:10 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-28=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-06-17T12:39:53.105Z] [hosting] finalized version for praktyki-438ed: {"name":"sites/praktyki-438ed/versions/3eb9e7fc3eb351fe","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2020-06-17T12:38:01.780718Z","createUser":{"email":"piter26133@gmail.com"},"finalizeTime":"2020-06-17T12:38:10.915191Z","finalizeUser":{"email":"piter26133@gmail.com"}}
+[info] +  hosting[praktyki-438ed]: version finalized 
+[info] i  hosting[praktyki-438ed]: releasing new version... 
+[debug] [2020-06-17T12:39:53.107Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/praktyki-438ed/releases?version_name=sites/praktyki-438ed/versions/3eb9e7fc3eb351fe  
+ {"message":null}
+[debug] [2020-06-17T12:39:54.839Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 17 Jun 2020 12:38:13 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-28=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-06-17T12:39:54.839Z] [hosting] release: {"name":"sites/praktyki-438ed/releases/1592397493701739","version":{"name":"sites/praktyki-438ed/versions/3eb9e7fc3eb351fe","status":"FINALIZED","config":{}},"type":"DEPLOY","releaseTime":"2020-06-17T12:38:13Z"}
+[info] +  hosting[praktyki-438ed]: release complete 
+[info] 
+[info] +  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/praktyki-438ed/overview
+[info] Hosting URL: https://praktyki-438ed.web.app

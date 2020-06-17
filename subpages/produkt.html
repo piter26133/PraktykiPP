@@ -7,7 +7,7 @@
     <title>Center os Resell</title>
     <link rel="stylesheet" href="/src/scss/style.scss">
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-    <link rel="icon" href="src/img/favicon.ico">
+    <link rel="icon" href="/src/img/favicon.ico">
 </head>
 
 <body>
@@ -29,8 +29,8 @@
             </div>
         </nav>
         <div class="header__logo">
-            <a href="index.html" class="header__logo-link">
-                <img class="header__logo-img" src="src/img/logo.svg" alt="logo sklepu">
+            <a href="/index.html" class="header__logo-link">
+                <img class="header__logo-img" src="/src/img/logo.svg" alt="logo sklepu">
             </a>
         </div>
         <nav class="header__menu">
@@ -62,8 +62,35 @@
             <img src="/src/img/koszyk.svg">
         </div>
     </header>
-    <main class="main">
-
+    <main class="product__main">
+        <section class="product__main__section">
+            <div class="product__main__section-box">
+                <img src="/public/product_img/koszula.jpg" class="product__main__section-box-img">
+            </div>
+            <div class="product__main__section-content">
+                <h3 class="product__main__section-content-name">Produkt</h3>
+                <div class="product__main__section-content-price">
+                    <span class="product__main__section-content-price-value">100 PLN</span>
+                </div>
+                <label class="product__main__section-content-sizes">
+                    <input type="radio" value="XS" name="size" class="product__main__section-content-sizes-value">
+                    XS
+                    <input type="radio" value="S" name="size" class="product__main__section-content-sizes-value">
+                    S
+                    <input type="radio" value="M" name="size" class="product__main__section-content-sizes-value">
+                    M
+                    <input type="radio" value="L" names="size" class="product__main__section-content-sizes-value">
+                    L
+                    <input type="radio" value="XL" name="size" class="product__main__section-content-sizes-value">
+                    XL
+                    <input type="radio" value="XXL" name="size" class="product__main__section-content-sizes-value">
+                    XXL
+                </label>
+                <div class="product__main__section-content-cart">
+                    <button class="product__main__section-content-cart-button">dodaj do koszyka</button>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="footer">
         <div class="footer__contact">
@@ -72,17 +99,16 @@
         <div class="footer__social">
             <div class="footer__social-item">
                 <a href="https://www.instagram.com" target="__blank" class="footer__social-item__link">
-                    <img src="src/img/instagram.svg" alt="instagram logo" class="footer__social-item__img">
+                    <img src="/src/img/instagram.svg" alt="instagram logo" class="footer__social-item__img">
                 </a>
             </div>
             <div class="footer__social-item">
                 <a href="https://www.facebook.com/" target="__blank" class="footer__social-item__link">
-                    <img src="src/img/facebookd.svg" alt="facebook logo" class="footer__social-item__img">
+                    <img src="/src/img/facebookd.svg" alt="facebook logo" class="footer__social-item__img">
                 </a>
             </div>
         </div>
     </footer>
     <script src="/src/js/index.js" async></script>
 </body>
-
 </html>

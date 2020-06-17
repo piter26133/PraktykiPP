@@ -1,0 +1,36 @@
+.product__main {
+    padding: 80px $space-md 80px;
+
+    &__section{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 5%;
+        margin-left: 10%;
+    }
+    &__section-box,
+    &__section-content{
+        width:100%;
+        height: 50%;
+    }
+    &__section-box{
+        box-sizing: border-box;
+        //padding-left: 20%;
+    }
+    &__section-content{
+        box-sizing: border-box;
+        //padding: 10% 0 0 10%;
+    }
+    &__section-box-img{
+        width: 80%;
+        height: 80%;
+    }
+    &__section-content-name,
+    &__section-content-price,
+    &__section-content-sizes,
+    &__section-content-cart{
+        margin-top: $space-md;
+    }
+    &__section-content-sizes{
+        display: flex;
+    }
+}

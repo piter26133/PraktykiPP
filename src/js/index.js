@@ -9,7 +9,7 @@ function processArticle(art) {
     .replace(/{{alt}}/g, art.alt)
     .replace(/{{name}}/g, art.name)
     .replace(/{{price}}/g, art.price)
-    .replace(/{{sizes}}/g, art ? .sizes ? .map(function (item) {
+    .replace(/{{sizes}}/g, art ?.sizes ?.map(function (item) {
       return `<label>
               <input type="radio" name="size" value="${item}" />
                 ${item}
