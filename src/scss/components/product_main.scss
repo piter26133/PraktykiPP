@@ -11,18 +11,28 @@
     &__section-content{
         width:100%;
         height: 50%;
+        @include bp-sm {
+            width: 50%;
+            height: 50%;
+        }
     }
     &__section-box{
         box-sizing: border-box;
-        //padding-left: 20%;
     }
     &__section-content{
         box-sizing: border-box;
-        //padding: 10% 0 0 10%;
+        margin-left: 0;
+        @include bp-md {
+            padding: 10% 0 0 10%;
+        }
     }
     &__section-box-img{
         width: 80%;
         height: 80%;
+        @include bp-md {
+            width: 50%;
+            height: 50%;
+        }
     }
     &__section-content-name,
     &__section-content-price,
